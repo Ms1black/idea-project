@@ -1,0 +1,22 @@
+{
+  "name": "@idea-project/backend",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "ts-node-dev --rs ./src/index.ts",
+    "build": "rimraf ./dist && tsc --build ./tsconfig.json",
+    "start": "node ./dist/index.js"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.1",
+    "rimraf": "^6.0.1",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "@trpc/server": "^11.1.2",
+    "cors": "^2.8.5",
+    "express": "^5.1.0"
+  }
+}
